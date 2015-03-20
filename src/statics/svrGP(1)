@@ -1,0 +1,5 @@
+function GetElqContentPersonalizationValue(strDataField){ var strTemp = '';        if(strDataField == 'V_Total_Pages' || strDataField == 'Total_Pages'){strTemp = '1';}
+        if(strDataField == 'V_Total_Visits' || strDataField == 'Total_Visits'){strTemp = '1';}
+        if(strDataField == 'V_LastVisitDateAndTime' || strDataField == 'LastVisitDateAndTime'){strTemp = '2015-03-17 18\x3a19\x3a22.313';}
+        if(strDataField == 'V_ElqCompanyName' || strDataField == 'ElqCompanyName'){strTemp = 'Seagate Technology';}
+	return strTemp; } if (this.SetElqContent){ SetElqContent(); }

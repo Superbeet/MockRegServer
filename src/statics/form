@@ -1,0 +1,6 @@
+var Okt = {
+	result: "false",
+	fieldName: "LANG",
+	fieldValue: "ENU",
+	reason: "Missing campaignId",
+};

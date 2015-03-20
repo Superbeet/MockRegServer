@@ -1,0 +1,625 @@
+/* reset */
+* {margin:0;padding:0;}
+
+html {font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;font-family:helvetica,arial,sans-serif;}
+::-moz-selection {background: #00a1dd; color: #fff; text-shadow: none;}
+
+::selection {
+	background: #00a1dd; 
+	color: #fff; 
+	text-shadow: none;
+	}
+	
+a {color: #00a1dd; text-decoration:none;}
+a:visited {color: #00a1dd; text-decoration:none;}
+a:hover {color: #007aa6; text-decoration:none;}
+a:focus {outline: none; text-decoration:none;}
+a:hover, a:active {outline: 0; text-decoration:underline;}
+b, strong {font-weight: bold;}
+blockquote {margin: 16px 40px;}
+pre, code, kbd, samp {font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 16px;}
+pre {white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
+nav ul, nav ol {list-style: none; list-style-image: none; margin: 0; padding: 0;}
+img {border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle;}
+
+
+form {
+	margin: 0;	
+	text-align: center;
+	}
+	
+fieldset {border: 0; margin: 0; padding: 0;}
+label {cursor: pointer;}
+button, input, select, textarea {font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle;font-family:helvetica,arial,sans-serif;}
+button, input {line-height: normal; *overflow: visible;}
+button, input[type="button"], input[type="reset"], input[type="submit"] {cursor: pointer; -webkit-appearance: button;}
+
+input[type="checkbox"], 
+input[type="radio"] {
+	box-sizing: border-box;	
+	margin: 2px 8px 5px 0;
+	float: left;
+	}
+	
+input[type="search"] {-webkit-appearance: textfield;-moz-box-sizing: content-box;-webkit-box-sizing: content-box; box-sizing: content-box;}
+input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
+button::-moz-focus-inner, input::-moz-focus-inner {border: 0; padding: 0;}
+ul, ol, p {margin: 0; padding: 0;}
+
+body {
+    background-color:#fff;
+    font-size:16px;
+    line-height:23px;
+    color:#333333;
+    font-family: Arial;
+    padding:0;
+    margin:0;
+}
+
+h1 {font-size:40px;line-height:46px;color:#333333;font-weight:300;}
+h2 {font-size:33px;line-height:37px;color:#333333;font-weight:300;}
+h3 {font-size:30px;line-height:34px;color:#333333;font-weight:300;}
+h4 {font-size:25px;line-height:29px;color:#333333;font-weight:300;}
+h5 {font-size:22px;line-height:26px;color:#333333;font-weight:300;}
+h6 {font-size:19px;line-height:24px;color:#333333;font-weight:400;}
+h6.bold{font-weight:700;}
+
+.descriptor{font-size:13px;line-height:18px;}
+
+.group {
+    overflow:auto;
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.header {
+    width:100%;
+    background:#fff;
+    height:50px;
+    border-bottom:1px solid #999;
+}
+
+.header > .logo {
+	margin:10px auto 0px;
+    height:42px;
+    background:url("http://www.seagate.com/www-content/homepage/_shared/images/logo_w131_blk.png") no-repeat top left;
+}
+.header > .logo img{
+    display:none;
+}
+
+.content {
+    height:100%;
+    display:block;    
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.content, .footer, .header > .logo{
+    width:900px; /* 940 - 40 padding */
+}
+.title_area{
+    margin-bottom:20px;
+}
+.alert{
+    padding:8px 35px 8px 14px;
+    border-radius: 4px;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+    border:1px solid #fff;
+}
+
+.warning{
+    color: #C09853;
+    background-color: #FCF8E3;
+    border-color:#FBEED5;
+}
+.success{
+    color:#468847;
+    background-color:#DFF0D8;
+    border-color:#D6E9C6;
+    }
+.promoBlock {
+	float: right;
+	margin: 20px 0 25px;
+	padding: 15px 0 20px;
+	width: 33%;
+	background-color: #00a1dd;
+	color: #fff;
+	border-radius: 3px;
+	
+}
+
+
+.promoBlock ul {
+	margin: 0 20px;
+	list-style: none;
+}
+
+.promoBlock li {
+	margin-top: 20px;
+	padding-top: 0;
+}
+.promoBlock h6{
+    margin:0 20px;
+    color:#fff;
+}
+.promoBlock li p { 
+	margin-top: 3px;
+}
+.promoBlock li p.descriptor{color:#fff;overflow:auto;}
+
+.promoBlock li .icon {	
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin: 2px 5px 5px -5px;
+	background: url("../images/20141021/sprite_prod-reg.png") no-repeat 0 0;
+}
+
+.promoBlock li.warranty .icon {
+	background-position: 0 -50px;
+}
+
+.promoBlock li.support .icon {
+	background-position: 0 -100px;
+	}
+
+.promoBlock li.updates .icon {
+	background-position: 0 -150px;
+	}
+
+.promoBlock li.offer {
+	background-color: #fff;
+	border-radius: 3px;
+	color: #333333;
+	margin: 23px 0 0;
+	padding: 10px 10px 25px;
+	
+}
+
+.promoBlock li.offer p{
+    margin-left:60px;
+}
+
+
+
+
+/* start .seagateForm general */
+
+
+.seagateForm, .setupBlock {
+    display:block;
+    width: 66%;
+    margin: 0;
+    float: left;
+    clear: none;
+}
+
+.form2, .setupBlock{width:55%;}
+
+.label{color:#666666;}
+
+.seagateForm .field_area{
+    float:left;
+    margin-bottom:20px;    
+    height: 50px;
+    width: 50%;
+}
+
+
+
+.seagateForm .field {
+    width: 90%;
+    border: 1px solid #999;
+    height: 22px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;    
+    margin-top: 3px;
+}
+
+.seagateForm .full_wide {
+    width: 100%;
+}
+
+.seagateForm .dbl_field {
+    width:95%;
+}
+
+.seagateForm select.field {
+	height: 27px;
+}
+
+.seagateForm .button {    
+    margin: 0px 0 20px 0;
+}
+
+.seagateForm .submit {
+    font-size:14px;
+    line-height:18px;
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#fff;
+    background-color:#00a1dd;
+    padding: 10px 22px 9px;
+    border:1px solid #007aa6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.seagateForm .submit:hover {
+    background:#007aa6;
+}
+
+/* end .seagateForm general */
+
+
+.footer {
+    font-size: 11px;
+    line-height:11px;
+    color:#666666;
+    border-top: 1px solid #999;
+    height: 60px;    
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.copy {
+    display:block;
+    float:left;
+    padding: 0 10px 0 5px;
+    border: none;
+}
+
+.privacy {
+    display:block;
+    padding: 0 10px 0 10px;
+    float: right;
+    border: none;
+}
+
+.about {
+    display:block;    
+    float: right;
+    border-right:1px solid #999;
+    padding: 0 10px 0 10px;
+}
+
+#moreInfo {
+    color: #00a1dd;
+    padding: 15px 0 0 0;
+}
+
+/*  ------ OFFERS BLOCK ---------------  */
+
+.offersBlock {
+    float:right;
+    position:relative;
+    margin: 20px 0 0px;
+    width:44%;
+   overflow:hidden;
+}
+
+.offersGallery{
+    width:380px;
+    }
+
+.offersBlock img{
+    width:100%;
+}
+
+.offersBlock .figure {
+    overflow:hidden;
+    position:relative;
+    width: 342px;
+    height: 325px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.offersBlock .figure div.show {
+    position:absolute;
+    left: -350px;
+    /*left: 350px;
+    top: 13px;*/
+    opacity: 0;
+    }
+
+.offersBlock .figure div.show:first-child {
+    left: 5px;
+    opacity: 1;
+    }    
+
+.offersBlock .figure .figcaption {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 22px 9px;
+    border-radius: 3px;
+    background-color: #00A1DD;
+    border:1px solid #007AA6;
+    box-shadow: 1px 1px 4px rgba(0,0,0, 0.2);
+    color: #fff;
+    font-weight: bold;
+    line-height:18px;
+}
+
+.offersBlock .offerNav {
+    position: absolute;
+    top: 43%;
+    width: 30px;
+    height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 37px;
+    background-color: #00A1DD;
+    box-shadow: 1px 1px 4px #b4b4b4;
+    box-shadow: 1px 1px 4px rgba(0,0,0, 0.2);
+    text-decoration: none;
+    color:#fff;
+}
+
+.offersBlock  .figure .cta{
+    width:80px;
+    border-radius: 3px;
+    font-size: 11px;
+    line-height:13px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 3px 10px; 
+    text-align: center;
+    background-color: #00A1DD;
+    text-decoration: none;
+    margin-left: 20px;  
+    border:1px solid #007AA6;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    left: 0;
+}
+
+.offersBlock  .figure .cta:hover{
+    background-color: #007AA6;
+}
+    
+
+.offersBlock  .figure .cta1 {
+    position: absolute;
+    top: 65%;
+}
+
+.offersBlock  .figure .cta2 {
+    position: absolute;
+    top: 75%;
+        
+}
+
+.offersBlock .cta3 {
+    position: absolute;
+    top: 60%;
+}
+
+.offersGallery .offerNav.prev {
+    left: 20px;
+    }
+
+.offersGallery .offerNav.next {
+    right: 20px;
+    }
+        
+.offersGallery .offerNav:hover,
+.offersGallery .offerNav:active {
+    background-color: #007AA6;
+    }
+
+.offersGallery .offerNav.prev:active {
+    left: 5px;
+    }
+
+.offersGallery .offerNav.next:active {
+    right: 5px;
+    }
+
+
+/* Align the text to the middle on certain social icons */
+
+/*
+.socialCenter {
+    display: inline-block;
+    position: relative;
+    top: 25%;
+}
+
+#rightCol {
+    vertical-align: top;
+    width: 480px;
+}
+
+.promo {
+    max-height: 368px;
+    width: 452px;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+}
+
+.promo img {
+    padding: 5px;
+}
+
+#promoDiv {
+    display: table-cell;
+    height: 385px;
+    padding-bottom: 15px;
+    vertical-align: bottom;
+    padding-left: 27px;
+}
+
+#promoDiv img {
+    max-height: 300px;
+}
+
+.displayNone {
+    display: none !important;
+}
+
+*/
+
+
+
+
+/* start .setupBlock */
+
+.setupBlock {
+	float: left;
+
+}
+
+.setupBlock > img {
+	display: none;
+	}
+
+.setupBlock h5 {
+	margin: 15px 0 0 0;
+	}
+
+
+.setupBlock .reg-reasons {
+	list-style: none;
+	margin: 15px 0 0;
+	padding: 0 0 15px 0;
+	border-bottom: 1px solid #ccc;
+	border-radius: 3px;
+	}
+
+.setupBlock ul li {
+	float: left;
+	margin: 0 3%;
+	width: 27%;
+	}
+.setupBlock ul li p{
+    overflow:auto;
+    line-height:20px;
+}
+
+.setupBlock ul li.updates {
+	margin-right: 0;
+	}
+
+.setupBlock ul li span {
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin: 0px 6px 0 0;
+	background: url("../images/20141021/sprite_prod-reg_sm.png") no-repeat;
+	}
+
+.setupBlock ul li.warranty span {
+    background-position: -30px -30px;
+    }
+
+.setupBlock ul li.support span {
+	background-position: -30px -60px;
+	}
+
+.setupBlock ul li.updates span {
+	background-position: -30px -90px;
+	}
+
+.setupBlock ul li a {
+	display: block;
+	padding: 10px 0;
+	}
+
+.setupBlock .social-media {
+	clear: both;
+	list-style: none;
+	margin: 15px 0 0 0;
+	padding: 1px 0 0 0;
+	border-radius: 3px;
+	}
+
+.setupBlock .social-media li {
+	margin: 0 10% 0 5%;
+	width: 30%;
+	}
+
+.setupBlock .social-media .twitter {
+
+	margin-right: 0;
+	}
+
+.setupBlock .social-media li img {
+	float: left;
+	margin: 0px 5px 0 0;
+	}
+
+/* end .setupBlock */
+
+/* Responsive */
+@media all and (max-width: 939px) {
+    .content, .footer, .header > .logo{
+        width:748px; /* 768 - 20 */
+    }
+    .content {
+      padding: 0 10px;
+    }
+    .setupBlock{
+        width:47%;
+    }
+    .setupBlock ul li {
+        margin:0 5px;
+    }
+	
+
+}
+
+@media all and (max-width: 767px) {
+    body{
+        font-size:14px;
+        line-height:19px;
+    }
+    .content, .footer, .header > .logo{
+        width:90%;
+    }
+    .setupBlock, .seagateForm{
+        width:100%;
+    }
+    .seagateForm .field_area{
+        display:block;
+        width:80%;
+    }   
+    .offersBlock, .promoBlock{
+        display:block;
+        width:100%;
+    }
+    .promoBlock ul li{
+        width:30%;
+        margin-right:10px;
+        display:inline-block;
+        vertical-align:top;
+    }
+
+    .promoBlock ul li.offer{
+        display:block;
+        width:50%;
+        margin:20px auto;
+        line-height:30px;
+    }
+
+}
+
+@media all and (max-width: 479px) {
+    .seagateForm .field_area{
+        width:100%;
+    }
+    .promoBlock ul li,.setupBlock ul li, .setupBlock .social-media ul li {
+        float:none;
+        display:block;
+        width:80% !important;
+    }
+    .promoBlock ul li.offer{
+        width:80%;
+    }
+
+    }
